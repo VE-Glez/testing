@@ -14,8 +14,9 @@ import ButtonPrimary from "../../components/HLPWCSM/ButtonPrimary";
 const HuddleLandingPageWithCurvedSectionsMaster = () => {
   return (
     <main>
-    <IconCommunities className={Styles.fckIcon} />
+    
       <ScreenMockups className={Styles.screenMockup} />
+      <IconCommunities className={Styles.fckIcon} />
       
     </main>
   );
