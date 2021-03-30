@@ -1,0 +1,74 @@
+.container {
+  min-height: 100vh;
+}
+
+.wrapper {
+  display: grid;
+  grid:
+    "nav"
+    "header"
+    "main"
+    "section1"
+    "section2" / 1fr;
+  justify-items: center;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  button {
+    border: 3px solid hsl(322, 100%, 66%);
+    background-color: transparent;
+    padding: 1em 2.25em;
+    border-radius: 1.25em;
+  }
+}
+
+.special {
+  width: 15%;
+}
+
+.header {
+  text-align: center;
+  grid-area: header;
+}
+
+svg.Logo {
+  width: 293px;
+}
+
+.mainContent {
+  display: grid;
+  place-content: center;
+  grid:
+    "mockup mockup"
+    "art1 art2" / 1fr 1fr;
+}
+
+svg.screenMockup {
+  grid-area: mockup;
+  width: 50%;
+  margin: 0 auto;
+  border: 1px solid green;
+  position: relative;
+  z-index: -1;
+}
+
+.art1 {
+  grid-area: art1;
+  border: hsl(322, 100%, 66%) 1px solid;
+}
+
+.fckIcon {
+  margin-top: 200px;
+  width: 200px;
+  position: relative;
+  z-index: 1000;
+  border: 1px solid blueviolet;
+}
+
+.art2 {
+  grid-area: art2;
+}
